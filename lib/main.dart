@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:memorymappicker/view/splashscreen.dart';
+import 'package:memorymappicker/const_value/textconst.dart';
+import 'package:memorymappicker/view/splashscreenview.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: TextConst.mainTitle,
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -41,7 +43,6 @@ class _MyHomePageState extends State<MyHomePage> {
           children: const <Widget>[],
         ),
       ),
-      // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
