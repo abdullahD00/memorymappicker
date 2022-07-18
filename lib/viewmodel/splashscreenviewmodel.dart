@@ -1,6 +1,8 @@
 import 'dart:math';
 import 'package:flutter/cupertino.dart';
-import 'package:memorymappicker/view/splashscreen.dart';
+import 'package:flutter/material.dart';
+import 'package:memorymappicker/view/splashscreenview.dart';
+import 'package:memorymappicker/view/swtchinfoview.dart';
 
 abstract class SplashScreenViewModel extends State<SplashScreenView> with TickerProviderStateMixin {
   late AnimationController animasyonKontrol;
@@ -19,7 +21,7 @@ abstract class SplashScreenViewModel extends State<SplashScreenView> with Ticker
       });
     animasyonKontrol.forward();
     Future.delayed(const Duration(seconds: 3), () {
-      //Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => switchscreen_one()));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const SwtchinfoView()));
     });
   }
 }
