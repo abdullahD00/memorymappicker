@@ -19,7 +19,7 @@ class MySwitchInfoPageContainer extends StatelessWidget {
           topRight: Radius.circular(DoubleConst.swtchContainerRadius),
         ),
       ),
-      height: 300,
+      height: 200,
       width: MediaQuery.of(context).size.width,
       child: myWidget,
     );
