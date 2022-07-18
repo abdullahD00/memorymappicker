@@ -31,7 +31,9 @@ dependencies:
     sdk: flutter
   #information switch screen slider
   flutter_onboarding_slider: ^1.0.7
-
+  #icons
+  animated_icon_button: ^1.0.2
+  font_awesome_flutter: ^10.1.0
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2

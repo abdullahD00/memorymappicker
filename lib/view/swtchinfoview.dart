@@ -7,6 +7,7 @@ import 'package:memorymappicker/core/widgets/swtchfirstpagewidget.dart';
 import 'package:memorymappicker/core/widgets/swtchfourthpagewidget.dart';
 import 'package:memorymappicker/core/widgets/swtchsecondpagewidget.dart';
 import 'package:memorymappicker/core/widgets/swtchthirdpagewidget.dart';
+import 'package:memorymappicker/view/appmain.dart';
 
 class SwtchinfoView extends StatelessWidget {
   const SwtchinfoView({Key? key}) : super(key: key);
@@ -15,11 +16,40 @@ class SwtchinfoView extends StatelessWidget {
   Widget build(BuildContext context) {
     return CupertinoApp(
       home: OnBoardingSlider(
-        pageBackgroundColor: Colors.blueGrey,
-        headerBackgroundColor: Colors.grey,
+        pageBackgroundColor: Colors.black,
+        headerBackgroundColor: Colors.black,
+        controllerColor: Colors.white,
+        finishButtonColor: Colors.white,
+        finishButtonTextStyle: const TextStyle(
+          color: Colors.black,
+        ),
+        skipIcon: const Icon(
+          Icons.arrow_forward,
+          color: Colors.black,
+        ),
+        leading: const Icon(
+          Icons.where_to_vote_outlined,
+          color: Colors.white,
+        ),
         finishButtonText: TextConst.swtchFinishButtonText,
-        skipTextButton: const Text(TextConst.swtchSkipTextButton),
-        trailing: const Text(TextConst.swtchTrailing),
+        skipTextButton: const Text(
+          TextConst.swtchSkipTextButton,
+          style: TextStyle(color: Colors.white),
+        ),
+        trailing: const Text(
+          TextConst.swtchTrailing,
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
+        onFinish: () {
+          Navigator.push<void>(
+            context,
+            MaterialPageRoute<void>(
+              builder: (BuildContext context) => const AppMainView(),
+            ),
+          );
+        },
         background: [
           Container(
             color: Colors.black,
