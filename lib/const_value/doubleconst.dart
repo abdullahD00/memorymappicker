@@ -5,6 +5,6 @@ class DoubleConst {
   //SwtchinfoView values
   static const double swtchSpeed = 1.8;
   static const double swtchContainerRadius = 60.0;
-  static const double swtchImageAssetHeight = 425.0;
+  static const double swtchImageAssetHeight = 520.0;
   static const int swtchTotalPage = 4;
 }

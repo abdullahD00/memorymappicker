@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:memorymappicker/const_value/colorconst.dart';
 import 'package:memorymappicker/const_value/imagepath.dart';
 import 'package:memorymappicker/const_value/textconst.dart';
-import 'package:memorymappicker/core/widgets/swtchscreencontainerwidget.dart';
-import 'package:memorymappicker/core/widgets/swtchscreenimagewidget.dart';
+import 'package:memorymappicker/core/widgets/switchinfoscreen/swtchscreencontainerwidget.dart';
+import 'package:memorymappicker/core/widgets/switchinfoscreen/swtchscreenimagewidget.dart';
 
-class MySwtchInfoFourthScreen extends StatelessWidget {
-  const MySwtchInfoFourthScreen({
+class MySwtchInfoSecondScreen extends StatelessWidget {
+  const MySwtchInfoSecondScreen({
     Key? key,
   }) : super(key: key);
 
@@ -18,7 +18,7 @@ class MySwtchInfoFourthScreen extends StatelessWidget {
           children: [
             Align(
                 alignment: Alignment.topCenter,
-                child: MySwitchInfoPageImageAsset(imagePath: ImagePath.fourthSwitchImage)),
+                child: MySwitchInfoPageImageAsset(imagePath: ImagePath.secondSwitchImage)),
           ],
         ),
         Positioned(
@@ -30,7 +30,7 @@ class MySwtchInfoFourthScreen extends StatelessWidget {
                 Center(child: _MySwtchContainerChild()),
               ],
             ),
-            myColor: ColorConst.swtchFourthContainerColor,
+            myColor: ColorConst.swtchSecondContainerColor,
           ),
         ),
       ],
@@ -47,13 +47,9 @@ class _MySwtchContainerChild extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Padding(
-        padding: EdgeInsets.only(
-          right: MediaQuery.of(context).size.width / 15,
-          left: MediaQuery.of(context).size.width / 15,
-          bottom: MediaQuery.of(context).size.height / 15,
-        ),
+        padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width / 15),
         child: Text(
-          TextConst.swtchFourthContainerText,
+          TextConst.swtchSecondContainerText,
           style: Theme.of(context).textTheme.headline2?.copyWith(
             fontSize: 25,
             color: Colors.black,
