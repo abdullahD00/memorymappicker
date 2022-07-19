@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:memorymappicker/const_value/colorconst.dart';
 import 'package:memorymappicker/const_value/imagepath.dart';
 import 'package:memorymappicker/const_value/textconst.dart';
-import 'package:memorymappicker/core/widgets/swtchscreencontainerwidget.dart';
-import 'package:memorymappicker/core/widgets/swtchscreenimagewidget.dart';
+import 'package:memorymappicker/core/widgets/switchinfoscreen/swtchscreencontainerwidget.dart';
+import 'package:memorymappicker/core/widgets/switchinfoscreen/swtchscreenimagewidget.dart';
 
 class MySwtchInfoThirdScreen extends StatelessWidget {
   const MySwtchInfoThirdScreen({

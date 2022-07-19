@@ -3,10 +3,10 @@ import 'package:flutter_onboarding_slider/flutter_onboarding_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:memorymappicker/const_value/doubleconst.dart';
 import 'package:memorymappicker/const_value/textconst.dart';
-import 'package:memorymappicker/core/widgets/swtchfirstpagewidget.dart';
-import 'package:memorymappicker/core/widgets/swtchfourthpagewidget.dart';
-import 'package:memorymappicker/core/widgets/swtchsecondpagewidget.dart';
-import 'package:memorymappicker/core/widgets/swtchthirdpagewidget.dart';
+import 'package:memorymappicker/core/widgets/switchinfoscreen/swtchfirstpagewidget.dart';
+import 'package:memorymappicker/core/widgets/switchinfoscreen/swtchfourthpagewidget.dart';
+import 'package:memorymappicker/core/widgets/switchinfoscreen/swtchsecondpagewidget.dart';
+import 'package:memorymappicker/core/widgets/switchinfoscreen/swtchthirdpagewidget.dart';
 import 'package:memorymappicker/view/appmain.dart';
 
 class SwtchinfoView extends StatelessWidget {
