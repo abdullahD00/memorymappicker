@@ -7,7 +7,7 @@ import 'package:memorymappicker/core/widgets/switchinfoscreen/swtchfirstpagewidg
 import 'package:memorymappicker/core/widgets/switchinfoscreen/swtchfourthpagewidget.dart';
 import 'package:memorymappicker/core/widgets/switchinfoscreen/swtchsecondpagewidget.dart';
 import 'package:memorymappicker/core/widgets/switchinfoscreen/swtchthirdpagewidget.dart';
-import 'package:memorymappicker/view/appmain.dart';
+import 'package:memorymappicker/view/appmainview.dart';
 
 class SwtchinfoView extends StatelessWidget {
   const SwtchinfoView({Key? key}) : super(key: key);
